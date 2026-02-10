@@ -1,0 +1,34 @@
+This chat room app is meant to replace a specific chat room with my friends.
+
+It needs to:
+    Have accounts
+    Direct Messages
+    A group chat
+    Have Group chat channels for organizing discussions
+    Allow users to send media in chats
+    Voice chat
+    Screen share
+
+Phase 1
+    [ ] Login
+    [ ] Send chat message to someone directly
+    [ ] Send chat to group chat
+    [ ] Delete message
+    [ ] Edit message
+    [ ] Store login as cookie
+    [ ] UI
+        [ ] Logging in
+        [ ] Select chat room
+        [ ] Notification for unread messages
+        [ ] "someone is typing" notification
+        [ ] Chat history and layout
+        [ ] Online / Offline indicator
+
+Phase 2
+    [ ] Account management
+        [ ] Change profile picture
+        [ ] Change display name
+        [ ] Change password
+        [ ] UI for this
+    [ ] Suggestions:
+        (... tbd)
