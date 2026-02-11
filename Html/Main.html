@@ -1,117 +1,99 @@
-<div class="main">
-	<div class="column wide">
-		Column B
-
-		<div class="row chat area">
-			<!-- Chat History -->
-			<div class="row chat history">
-				<ul class="uk-comment-list">
-					<li>
-						<article class="uk-comment uk-visible-toggle" tabindex="-1" role="comment">
-							<header class="uk-comment-header uk-position-relative">
-								<div class="uk-grid-medium uk-flex-middle" uk-grid>
-									<div class="uk-width-auto">
-										<img class="uk-comment-avatar" src="images/avatar.jpg" width="80" height="80" alt="">
-									</div>
-									<div class="uk-width-expand">
-										<h4 class="uk-comment-title uk-margin-remove"><a class="uk-link-reset" href="#">Author</a></h4>
-										<p class="uk-comment-meta uk-margin-remove-top"><a class="uk-link-reset" href="#">12 days ago</a></p>
-									</div>
-								</div>
-								<div class="uk-position-top-right uk-position-small uk-hidden-hover"><a class="uk-link-muted" href="#">Reply</a></div>
-							</header>
-							<div class="uk-comment-body">
+<div class="chimera app">
+	<!-- Chat History and Send Chat Column -->
+	<div class="chatroom">
+		<div class="chat history">
+			<ul id="chat-history-location">
+				<li>
+					<article class="message" id="chat-message-example">
+						<div class="avatar">
+							<img class="avatar image" src="Img/default-avatar.png" />
+						</div>
+						<div class="content">
+							<div class="meta">
+								<label class="display name">Author</label>
+								<label class="post date"> 10:00 am Feb 11, 2026</label>
+							</div>
+							<div class="body">
 								<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
 							</div>
-						</article>
-					</li>
-					<li>
-						<article class="uk-comment uk-visible-toggle" tabindex="-1" role="comment">
-							<header class="uk-comment-header uk-position-relative">
-								<div class="uk-grid-medium uk-flex-middle" uk-grid>
-									<div class="uk-width-auto">
-										<img class="uk-comment-avatar" src="images/avatar.jpg" width="80" height="80" alt="">
-									</div>
-									<div class="uk-width-expand">
-										<h4 class="uk-comment-title uk-margin-remove"><a class="uk-link-reset" href="#">Author</a></h4>
-										<p class="uk-comment-meta uk-margin-remove-top"><a class="uk-link-reset" href="#">12 days ago</a></p>
-									</div>
-								</div>
-								<div class="uk-position-top-right uk-position-small uk-hidden-hover"><a class="uk-link-muted" href="#">Reply</a></div>
-							</header>
-							<div class="uk-comment-body">
-								<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
-							</div>
-						</article>
-					</li>
-					<li>
-						<article class="uk-comment uk-visible-toggle" tabindex="-1" role="comment">
-							<header class="uk-comment-header uk-position-relative">
-								<div class="uk-grid-medium uk-flex-middle" uk-grid>
-									<div class="uk-width-auto">
-										<img class="uk-comment-avatar" src="images/avatar.jpg" width="80" height="80" alt="">
-									</div>
-									<div class="uk-width-expand">
-										<h4 class="uk-comment-title uk-margin-remove"><a class="uk-link-reset" href="#">Author</a></h4>
-										<p class="uk-comment-meta uk-margin-remove-top"><a class="uk-link-reset" href="#">12 days ago</a></p>
-									</div>
-								</div>
-								<div class="uk-position-top-right uk-position-small uk-hidden-hover"><a class="uk-link-muted" href="#">Reply</a></div>
-							</header>
-							<div class="uk-comment-body">
-								<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
-							</div>
-						</article>
-					</li>
-				</ul>
-			</div>
-			<!-- / Chat History -->
-			<!-- Chat Input -->
-			<div class="row chat input">
-				<textarea class="chat input field" placeholder="Start typing here..." rows="1"></textarea>
-				<button>Send</button>
-			</div>
-			<!-- / Chat Input -->
-		</div>
-	</div>
-	<div class="column thin">
-		Column A
-		<div class="row">
-			User Profile
-		</div>
-		<div class="row">
-			<!-- Group Chats and Friends Accordion -->
-			<ul class="uk-accordion-default" uk-accordion="multiple: true">
-				<li class="uk-open">
-					<a class="uk-accordion-title" href>Group Chats</a>
-					<div class="uk-accordion-content">
-						<!-- Group Chat Accordion -->
-						<ul class="uk-accordion-default" uk-accordion="multiple: true">
-							<li class="uk-open">
-								<a class="uk-accordion-title" href>The Boyz</a>
-								<div class="uk-accordion-content">
-									<p>General</p>
-									<p>Not Financial Advice</p>
-									<p>Art</p>
-									<p>Inspiration</p>
-								</div>
-							</li>
-						</ul>
-						<!-- / Group Chat Accordion -->
-					</div>
+						</div>
+					</article>
 				</li>
 				<li>
-					<hr class="uk-divider-icon">
-					<a class="uk-accordion-title" href>Friends</a>
-					<div class="uk-accordion-content">
-						<!-- Friends List -->
-						<p>Friendo</p>
-						<p>Enemio</p>
-						<p>Coolio</p>
-					</div>
+					<article class="system message" id="chat-system-message-example">
+						<div class="content">
+							<div class="body">
+								<p class="person">Doombeetle</p> <p class="verb">BOPPED</p> <p class="person">Someone</p> <p>for</p> <p class="important">23</p> <p class="verb">Damage</p>
+							</div>
+							<div class="meta">
+								<label class="post date"> 10:00 am Feb 11, 2026</label>
+							</div>
+						</div>
+					</article>
 				</li>
+				<li>
+					<article class="message" id="chat-media-message-example">
+						<div class="avatar">
+							<img class="avatar image" src="Img/default-avatar.png" />
+						</div>
+						<div class="content">
+							<div class="meta">
+								<label class="display name">Author</label>
+								<label class="post date"> 10:00 am Feb 11, 2026</label>
+							</div>
+							<div class="body">
+								<p>Check out these locations from the latest patch of Glink Quest 2!</p>
+								<img src="/Img/demo (1).png" />
+								<img src="/Img/demo (2).png" />
+								<p>Looks like we finally get to see the witches of West Marsh.</p>
+								<img src="/Img/demo (3).png" />
+								<p>Eventually, clicking on images will open a full-screen modal.</p>
+							</div>
+						</div>
+					</article>
+				</li>
+
+				<script>
+					var historyAmount = 50
+					var chatIds = [
+						'#chat-message-example',
+						'#chat-message-example',
+						'#chat-message-example',
+						'#chat-system-message-example',
+						'#chat-media-message-example']
+					for (var i = 0; i < historyAmount; i++)
+					{
+						var randomChatMessageType = chatIds[Math.floor(Math.random() * chatIds.length)]
+						var listItem = $('<li></li>')
+						var newNode = $(randomChatMessageType).clone().appendTo(listItem)
+						listItem.appendTo('#chat-history-location')
+					}
+				</script>
 			</ul>
-			<!-- / Group Chats and Friends Accordion -->
 		</div>
+	</div>
+
+	<!-- Profile Widget and Chat room navigation Column -->
+	<div class="navigation">
+		<div class="profile">
+        <div class="avatar">
+            <img src="/Img/default-avatar.png">
+        </div>
+        <div class="about">
+            <div class="display name">
+                <p>Very Long Name Mcgee</p>
+            </div>
+            <div class="settings">
+                <div>
+                    <span uk-icon="cog"></span>
+                    <label>Settings</label>
+                </div>
+                <div>
+                    <span uk-icon="sign-out"></span>
+                    <label>Sign Out</label>
+                </div>
+            </div>
+        </div>
+    </div>
 	</div>
 </div>

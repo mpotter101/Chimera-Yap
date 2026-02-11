@@ -1,0 +1,120 @@
+<div class="chimera">
+    <!-- Chat Message -->
+     <p>Chat Message From a Person</p>
+     <article class="message" id="chat-message-example">
+        <div class="avatar">
+            <img class="avatar image" src="Img/default-avatar.png" />
+        </div>
+        <div class="content">
+            <div class="meta">
+                <label class="display name">Author</label>
+                <label class="post date"> 10:00 am Feb 11, 2026</label>
+            </div>
+            <div class="body">
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+            </div>
+        </div>
+    </article>
+
+    <!-- Chat Message -->
+     <p>Chat Message From the system</p>
+     <article class="system message" id="chat-system-message-example">
+        <div class="content">
+            <div class="body">
+                <p class="person">Doombeetle</p> <p class="verb">BOPPED</p> <p class="person">Someone</p> <p>for</p> <p class="important">23</p> <p class="verb">Damage</p>
+            </div>
+            <div class="meta">
+                <label class="post date"> 10:00 am Feb 11, 2026</label>
+            </div>
+        </div>
+    </article>
+
+    <!-- Chat Message with images -->
+     <p>Chat Message with images</p>
+     <article class="message" id="chat-media-message-example">
+        <div class="avatar">
+            <img class="avatar image" src="Img/default-avatar.png" />
+        </div>
+        <div class="content">
+            <div class="meta">
+                <label class="display name">Author</label>
+                <label class="post date"> 10:00 am Feb 11, 2026</label>
+            </div>
+            <div class="body">
+                <p>Check out these locations from the latest patch of Glink Quest 2!</p>
+                <img src="/Img/demo (1).png" />
+                <img src="/Img/demo (2).png" />
+                <p>Looks like we finally get to see the witches of West Marsh.</p>
+                <img src="/Img/demo (3).png" />
+                <p>Eventually, clicking on images will open a full-screen modal.</p>
+            </div>
+        </div>
+    </article>
+
+</div>
+
+    <!-- Chat History -->
+    <p>Chat History</p>
+    <div class="chat history">
+        <ul id="chat-history-location">
+            <script>
+                var historyAmount = 10
+                var chatIds = ['#chat-message-example', '#chat-system-message-example', '#chat-media-message-example']
+                for (var i = 0; i < historyAmount; i++)
+                {
+                    var randomChatMessageType = chatIds[Math.floor(Math.random() * 3)]
+                    var listItem = $('<li></li>')
+                    var newNode = $(randomChatMessageType).clone().appendTo(listItem)
+                    listItem.appendTo('#chat-history-location')
+                }
+
+            </script>
+        </ul>
+    </div>
+
+    <!-- Profile Widget -->
+    <p>Profile Widget</p>
+    <div class="profile">
+        <div class="avatar">
+            <img src="/Img/default-avatar.png">
+        </div>
+        <div class="about">
+            <div class="display name">
+                <p>Very Long Name Mcgee</p>
+            </div>
+            <div class="settings">
+                <div>
+                    <span uk-icon="cog"></span>
+                    <label>Settings</label>
+                </div>
+                <div>
+                    <span uk-icon="sign-out"></span>
+                    <label>Sign Out</label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Group Chat and Channel Selection-->
+    <p>Group Chat and Channel Selection</p>
+    <!-- Group Chat Accordion -->
+    <ul class="group chat uk-accordion-default" uk-accordion="multiple: true">
+        <li class="uk-open">
+            <a class="uk-accordion-title" href>The Boyz</a>
+            <div class="uk-accordion-content">
+                <p>General</p>
+                <p>Not Financial Advice</p>
+                <p>Art</p>
+                <p>Inspiration</p>
+            </div>
+        </li>
+    </ul>
+
+    <!-- Item in Friend List, online -->
+
+    <!-- Item in Friend List with unread message -->
+
+    <!-- Item in Friend List, offline -->
+
+    <!-- Item in Friend List, offline with unread message -->
+</div>

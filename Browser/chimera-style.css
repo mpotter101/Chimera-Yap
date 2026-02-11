@@ -1,0 +1,194 @@
+:root {
+    --color-darkest:  #0c0c0c;
+    --color-midtone-dark: #242627;
+    --color-midtone-light: #7a7272;
+    --color-highlight: #bbbbbb;
+    --color-alert: #be7474;
+}
+
+html {
+    background-color: var(--color-midtone-dark);
+}
+
+* {
+    color: var(--color-highlight);
+}
+
+/* Header Bar that is included from templating */
+.header.bar {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    height: 4em;
+    padding-left: 1em;
+    border-top: 0;
+    border-bottom: var(--color-darkest) 1px solid;
+}
+
+.header.bar > * {
+    max-height: 100%;
+}
+
+.header.bar > .header.title {
+    font-weight: bold;
+    font-size: 1.4em;
+    padding-left: 1em;
+}
+/* End of Header Bar that is included from templating */
+
+/* Footer Bar that is included from templating */
+.footer.bar {
+    border-top: var(--color-darkest) 1px solid;
+    text-align: right;
+    font-size: 0.8em;
+    font-style: italic;
+    padding: 0.5em;
+    padding-right: 1em;
+}
+
+.footer.bar > p {
+    margin: 0;
+}
+/* End of Footer Bar that is included from templating */
+
+/* Chat Message */
+.message {
+    display: flex;
+    margin-top: 0.5em;
+    margin-left: 1em;
+}
+
+.message > .content {
+    display: inline;
+    flex: 1;
+    padding-left: 1em;
+    font-size: 1.2em;
+}
+
+.message > .content > .body > img {
+    display: inline;
+    max-height: 20vh;
+    cursor: pointer;
+    transition: filter 0.3s ease;
+}
+
+.message > .content > .body > img:hover {
+    filter: brightness(120%); /* Makes image 20% brighter */
+}
+
+.message > .avatar {
+    padding-left: 0.5em;
+    width: 5em;
+}
+
+.message > .avatar > img {
+    border: 1px solid var(--color-highlight);
+}
+
+.meta > .display.name {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.meta > .post.date {
+    color: var(--color-midtone-light);
+    font-style: italic;
+    font-size: 0.8em;
+    padding-left: 1.5em;
+}
+
+/* Chat message from system */
+.system.message > .content {
+    text-align: center;
+}
+
+.system.message > .content > .body > * {
+    display: inline;
+}
+
+/* end of chat message */
+
+/* Chat History */
+.chat.history {
+    display: block;
+    height: 81vh;
+    overflow-y: auto;
+    width: 100%;
+}
+
+.chat.history > ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+.person, .important {
+    font-weight: bold;
+}
+
+.verb, .important {
+    color: var(--color-alert);
+}
+
+/* End of Chat History */
+
+/* Group Chat Navigation */
+.group.chat {
+    padding-left: 1em;
+}
+
+.group.chat > li > a {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: var(--color-midtone-light) !important; 
+}
+
+.group.chat > li > a:hover {
+    color: color-mix(in srgb, var(--color-midtone-light), white 20%) !important; 
+}
+
+.group.chat > li > div > p {
+    padding-left: 1em;
+}
+
+.group.chat > li > div > p:hover {
+    cursor: pointer;
+    color: color-mix(in srgb, var(--color-highlight), white 40%) !important; 
+}
+/* End of Group Chat Navigation */
+
+/* Profile Widget */
+.profile {
+    border: 1px solid var(--color-darkest);
+    display: flex;
+    overflow-x: hidden;
+}
+
+.profile > .avatar {
+    border-right: 1px solid var(--color-darkest);
+    max-width: 33%;
+}
+
+.about {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about > .display.name {
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+    margin-top: auto;
+}
+
+.about > .settings {
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: 1em;
+}
+
+.about > .settings > * {
+    display: inline;
+    margin-right: 1.5em;
+}

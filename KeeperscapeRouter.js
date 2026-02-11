@@ -38,8 +38,9 @@ export default class KeeperscapeRouter {
 		res.send(content);
 	}
 
-	async SendMainPage (req, res) {
-		var page = await KeeperscapeTemplater.GetPage (path.join (this.directory, '/Html/Main.html'));
+	async LoadAndSendPage(req, res, htmlFileName)
+	{
+		var page = await KeeperscapeTemplater.GetPage (path.join (this.directory, '/Html/' + htmlFileName +'.html'));
 		page = KeeperscapeTemplater.GetFilledOutPage ({ 
 				data: {}, // to send data, use this format: '{{USERNAME}}': user.username 
 				page
@@ -51,7 +52,13 @@ export default class KeeperscapeRouter {
 	AddRoutesToApp (app) {
 		app.route ('/').get ( 
 			(req, res) => {
-				this.SendMainPage (req, res); 
+				this.LoadAndSendPage (req, res, 'Main'); 
+			}
+		);
+
+		app.route ('/sandbox').get ( 
+			(req, res) => {
+				this.LoadAndSendPage (req, res, 'Sandbox'); 
 			}
 		);
 	}
