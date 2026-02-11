@@ -1,34 +1,14 @@
 This chat room app is meant to replace a specific chat room with my friends.
 
-It needs to:
-    Have accounts
-    Direct Messages
-    A group chat
-    Have Group chat channels for organizing discussions
-    Allow users to send media in chats
-    Voice chat
-    Screen share
+Feb 10 2026
+    Created a basic layout with fixed content to get an idea of flow and feel.
+    I feel like the current design does a good job of working at a half-ratio for a 1080 desktop display.
+    Really wanting to hammer out the presentation before anything else.
 
-Phase 1
-    [ ] Login
-    [ ] Send chat message to someone directly
-    [ ] Send chat to group chat
-    [ ] Delete message
-    [ ] Edit message
-    [ ] Store login as cookie
-    [ ] UI
-        [ ] Logging in
-        [ ] Select chat room
-        [ ] Notification for unread messages
-        [ ] "someone is typing" notification
-        [ ] Chat history and layout
-        [ ] Online / Offline indicator
+    Looking at PC-98 Rpgs for UI inspiration.
 
-Phase 2
-    [ ] Account management
-        [ ] Change profile picture
-        [ ] Change display name
-        [ ] Change password
-        [ ] UI for this
-    [ ] Suggestions:
-        (... tbd)
+Work Items
+    [ ] Figure out a more final design
+    [ ] Design Chatty the Chimera
+    [ ] Implement the more final design
+    [ ] Breakdown functional needs from there
