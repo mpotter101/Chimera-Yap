@@ -1,3 +1,117 @@
-<div>
-	Main chat
+<div class="main">
+	<div class="column left">
+		Column A
+		<div class="row">
+			User Profile
+		</div>
+		<div class="row">
+			<!-- Group Chats and Friends Accordion -->
+			<ul class="uk-accordion-default" uk-accordion="multiple: true">
+				<li class="uk-open">
+					<a class="uk-accordion-title" href>Group Chats</a>
+					<div class="uk-accordion-content">
+						<!-- Group Chat Accordion -->
+						<ul class="uk-accordion-default" uk-accordion="multiple: true">
+							<li class="uk-open">
+								<a class="uk-accordion-title" href>The Boyz</a>
+								<div class="uk-accordion-content">
+									<p>General</p>
+									<p>Not Financial Advice</p>
+									<p>Art</p>
+									<p>Inspiration</p>
+								</div>
+							</li>
+						</ul>
+						<!-- / Group Chat Accordion -->
+					</div>
+				</li>
+				<li>
+					<hr class="uk-divider-icon">
+					<a class="uk-accordion-title" href>Friends</a>
+					<div class="uk-accordion-content">
+						<!-- Friends List -->
+						<p>Friendo</p>
+						<p>Enemio</p>
+						<p>Coolio</p>
+					</div>
+				</li>
+			</ul>
+			<!-- / Group Chats and Friends Accordion -->
+		</div>
+	</div>
+	<div class="column right">
+		Column B
+
+		<div class="row chat area">
+			<!-- Chat History -->
+			<div class="row chat history">
+				<ul class="uk-comment-list">
+					<li>
+						<article class="uk-comment uk-visible-toggle" tabindex="-1" role="comment">
+							<header class="uk-comment-header uk-position-relative">
+								<div class="uk-grid-medium uk-flex-middle" uk-grid>
+									<div class="uk-width-auto">
+										<img class="uk-comment-avatar" src="images/avatar.jpg" width="80" height="80" alt="">
+									</div>
+									<div class="uk-width-expand">
+										<h4 class="uk-comment-title uk-margin-remove"><a class="uk-link-reset" href="#">Author</a></h4>
+										<p class="uk-comment-meta uk-margin-remove-top"><a class="uk-link-reset" href="#">12 days ago</a></p>
+									</div>
+								</div>
+								<div class="uk-position-top-right uk-position-small uk-hidden-hover"><a class="uk-link-muted" href="#">Reply</a></div>
+							</header>
+							<div class="uk-comment-body">
+								<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+							</div>
+						</article>
+					</li>
+					<li>
+						<article class="uk-comment uk-visible-toggle" tabindex="-1" role="comment">
+							<header class="uk-comment-header uk-position-relative">
+								<div class="uk-grid-medium uk-flex-middle" uk-grid>
+									<div class="uk-width-auto">
+										<img class="uk-comment-avatar" src="images/avatar.jpg" width="80" height="80" alt="">
+									</div>
+									<div class="uk-width-expand">
+										<h4 class="uk-comment-title uk-margin-remove"><a class="uk-link-reset" href="#">Author</a></h4>
+										<p class="uk-comment-meta uk-margin-remove-top"><a class="uk-link-reset" href="#">12 days ago</a></p>
+									</div>
+								</div>
+								<div class="uk-position-top-right uk-position-small uk-hidden-hover"><a class="uk-link-muted" href="#">Reply</a></div>
+							</header>
+							<div class="uk-comment-body">
+								<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+							</div>
+						</article>
+					</li>
+					<li>
+						<article class="uk-comment uk-visible-toggle" tabindex="-1" role="comment">
+							<header class="uk-comment-header uk-position-relative">
+								<div class="uk-grid-medium uk-flex-middle" uk-grid>
+									<div class="uk-width-auto">
+										<img class="uk-comment-avatar" src="images/avatar.jpg" width="80" height="80" alt="">
+									</div>
+									<div class="uk-width-expand">
+										<h4 class="uk-comment-title uk-margin-remove"><a class="uk-link-reset" href="#">Author</a></h4>
+										<p class="uk-comment-meta uk-margin-remove-top"><a class="uk-link-reset" href="#">12 days ago</a></p>
+									</div>
+								</div>
+								<div class="uk-position-top-right uk-position-small uk-hidden-hover"><a class="uk-link-muted" href="#">Reply</a></div>
+							</header>
+							<div class="uk-comment-body">
+								<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+							</div>
+						</article>
+					</li>
+				</ul>
+			</div>
+			<!-- / Chat History -->
+			<!-- Chat Input -->
+			<div class="row chat input">
+				<textarea class="chat input field" placeholder="Start typing here..." rows="1"></textarea>
+				<button>Send</button>
+			</div>
+			<!-- / Chat Input -->
+		</div>
+	</div>
 </div>

@@ -30,8 +30,8 @@ export default class KeeperscapeRouter {
 			user: user,
 			page,
 			templateFilePath: path.join (this.directory, '/Html/Partial/template.html'),
-			navbarFilePath: path.join (this.directory, '/Html/Partial/' + this.GetNavbarFile (req)), 
-			footerFilePath: path.join (this.directory, '/Html/Partial/footer-bar.html'),
+			headerFilePath: path.join (this.directory, '/Html/Partial/header.html'), 
+			footerFilePath: path.join (this.directory, '/Html/Partial/footer.html'),
 			tabTitle
 		});
 		//console.log (res)
