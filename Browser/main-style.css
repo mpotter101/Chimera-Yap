@@ -8,5 +8,15 @@
 }
 
 .navigation {
-    width: 100em;
+    width: 60em;
+}
+
+.chat.select.label {
+    text-align: center;
+    margin-top: 1em;
+}
+
+/* Variable inherited from chimera-style.css */
+.groups.and.friends {
+    border-top: 1px solid var(--color-darkest);
 }

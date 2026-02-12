@@ -45,6 +45,8 @@
 								<p>Check out these locations from the latest patch of Glink Quest 2!</p>
 								<img src="/Img/demo (1).png" />
 								<img src="/Img/demo (2).png" />
+								<img src="/Img/demo tall image.png" />
+								<img src="/Img/demo wide image.png" />
 								<p>Looks like we finally get to see the witches of West Marsh.</p>
 								<img src="/Img/demo (3).png" />
 								<p>Eventually, clicking on images will open a full-screen modal.</p>
@@ -75,25 +77,46 @@
 
 	<!-- Profile Widget and Chat room navigation Column -->
 	<div class="navigation">
+		<!-- Profile Widget -->
 		<div class="profile">
-        <div class="avatar">
-            <img src="/Img/default-avatar.png">
-        </div>
-        <div class="about">
-            <div class="display name">
-                <p>Very Long Name Mcgee</p>
-            </div>
-            <div class="settings">
-                <div>
-                    <span uk-icon="cog"></span>
-                    <label>Settings</label>
-                </div>
-                <div>
-                    <span uk-icon="sign-out"></span>
-                    <label>Sign Out</label>
-                </div>
-            </div>
-        </div>
-    </div>
+			<div class="avatar">
+				<img src="/Img/default-avatar.png">
+			</div>
+			<div class="about">
+				<div class="display name">
+					<p>Very Long Name Mcgee</p>
+				</div>
+				<div class="settings">
+					<div class="first">
+						<span uk-icon="cog"></span>
+					</div>
+					<div>
+						<span uk-icon="sign-out"></span>
+					</div>
+				</div>
+			</div>
+   		</div>
+		<!-- / Profile Widget -->
+
+		<!-- Group Chats -->
+		<div class="groups and friends">
+
+			<div class="chat select label"><label>Group Chats</label></div>
+			<ul class="group chat uk-accordion-default" uk-accordion="multiple: true">
+					<li class="uk-open">
+					<a class="uk-accordion-title" href>The Boyz</a>
+					<div class="uk-accordion-content">
+						<p>General</p>
+						<p>Not Financial Advice</p>
+						<p>Art</p>
+						<p>Inspiration</p>
+					</div>
+				</li>
+			</ul>
+
+			<!-- / Group Chats -->
+			<hr class="uk-divider-icon">
+			<div class="chat select label"><label>Friends</label></div>
+		</div>
 	</div>
 </div>

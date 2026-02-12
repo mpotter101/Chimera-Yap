@@ -67,9 +67,13 @@ html {
 
 .message > .content > .body > img {
     display: inline;
-    max-height: 20vh;
+    min-height: 2em;
+    min-width: 2em;
+    max-height: 23vh;
+    max-width: 100%;
     cursor: pointer;
     transition: filter 0.3s ease;
+    margin-top: 0.2em;
 }
 
 .message > .content > .body > img:hover {
@@ -158,9 +162,7 @@ html {
 
 /* Profile Widget */
 .profile {
-    border: 1px solid var(--color-darkest);
     display: flex;
-    overflow-x: hidden;
 }
 
 .profile > .avatar {
@@ -186,9 +188,9 @@ html {
     text-align: center;
     margin-top: auto;
     margin-bottom: 1em;
+    display: flex;
 }
 
-.about > .settings > * {
-    display: inline;
-    margin-right: 1.5em;
+.about > .settings > .first {
+    margin-right: 1em;
 }
