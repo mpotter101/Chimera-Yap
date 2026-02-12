@@ -1,8 +1,8 @@
 :root {
     --color-darkest:  #0c0c0c;
-    --color-midtone-dark: #242627;
+    --color-midtone-dark: #252729;
     --color-midtone-light: #7a7272;
-    --color-highlight: #bbbbbb;
+    --color-highlight: #d7d7d7;
     --color-alert: #be7474;
 }
 
@@ -19,7 +19,7 @@ html {
     flex-grow: 1;
     display: flex;
     align-items: center;
-    height: 4em;
+    height: 5vh;
     padding-left: 1em;
     border-top: 0;
     border-bottom: var(--color-darkest) 1px solid;
@@ -42,8 +42,8 @@ html {
     text-align: right;
     font-size: 0.8em;
     font-style: italic;
-    padding: 0.5em;
-    padding-right: 1em;
+    padding: 0.2vh 1em;
+
 }
 
 .footer.bar > p {
@@ -115,13 +115,14 @@ html {
 /* Chat History */
 .chat.history {
     display: block;
-    height: 81vh;
+    height: 85vh;
     overflow-y: auto;
     width: 100%;
 }
 
 .chat.history > ul {
     padding: 0;
+    padding-right: 1em;
     list-style-type: none;
 }
 
@@ -132,7 +133,6 @@ html {
 .verb, .important {
     color: var(--color-alert);
 }
-
 /* End of Chat History */
 
 /* Group Chat Navigation */
@@ -193,4 +193,110 @@ html {
 
 .about > .settings > .first {
     margin-right: 1em;
+}
+/* end of Profile Widget */
+
+/* Chat Input Field */
+.input.form {
+    display: flex;
+}
+
+.input.form > textarea {
+    resize: none;
+    flex-grow: 1;
+    background-color: color-mix(in srgb, var(--color-midtone-dark), black 20%);
+    border: none;
+    height: 3vh;
+    min-height: 1em;
+    padding-top: 0.8vh;
+    padding-left: 1em;
+    font-size: 1.3em;
+    margin: 0;
+}
+
+.input.form > button {
+    width: 5em;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    background-color: var(--color-midtone-light);
+    color: var(--color-highlight);
+    transition: background-color 0.3s ease;
+}
+
+.input.form > button:hover{
+    cursor: pointer;
+}
+
+.input.form > .send:hover {
+    background-color: color-mix(in srgb, var(--color-midtone-light), white 40%);
+    color: color-mix(in srgb, var(--color-highlight), white 40%);
+}
+
+.input.form > .send:active {
+    background-color: color-mix(in srgb, var(--color-midtone-light), black 40%);
+    color: color-mix(in srgb, var(--color-highlight), black 40%);
+}
+
+.input.form > .media.upload {
+    background-color: color-mix(in srgb, var(--color-midtone-dark), black 20%);
+}
+
+.input.form > .media.upload:hover {
+    background-color: color-mix(in srgb, var(--color-midtone-dark), white 20%);
+    color: color-mix(in srgb, var(--color-highlight), white 40%);
+}
+
+.input.form > .media.upload:active {
+    background-color: color-mix(in srgb, var(--color-midtone-dark), black 20%);
+    color: color-mix(in srgb, var(--color-highlight), black 40%);
+}
+/* end of Chat Input Field */
+
+/* Friend widget */
+.friend {
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.friend:hover {
+    background-color: color-mix(in srgb, var(--color-midtone-dark), white 20%);
+    color: color-mix(in srgb, var(--color-highlight), white 40%);
+    cursor: pointer;
+}
+
+.friend:active {
+    background-color: color-mix(in srgb, var(--color-midtone-dark), black 20%);
+    color: color-mix(in srgb, var(--color-highlight), black 40%);
+    cursor: pointer;
+}
+
+.friend > .avatar > img {
+    max-height: 10vh;
+}
+
+.friend > .about {
+    padding-left: 1em;
+}
+
+.friend > .about > * {
+    width: 100%;
+}
+
+.friend > .about > .display.name {
+    font-size: 1.3em;
+    font-weight: bold;
+    text-align: left;
+}
+/* End of friend widget */
+
+/* Friends list */
+ul.friends.list {
+    list-style-type: none;
+    padding: 1em;
+}
+
+ul.friends.list > li:not(:first-child) {
+    margin-top: 0.25em;
 }

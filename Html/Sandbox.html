@@ -1,13 +1,13 @@
 <div class="chimera">
     <!-- Chat Message -->
      <p>Chat Message From a Person</p>
-     <article class="message" id="chat-message-example">
+    <article class="message" id="chat-message-example">
         <div class="avatar">
             <img class="avatar image" src="Img/default-avatar.png" />
         </div>
         <div class="content">
             <div class="meta">
-                <label class="display name">Author</label>
+                <label class="display name">Black Mage</label>
                 <label class="post date"> 10:00 am Feb 11, 2026</label>
             </div>
             <div class="body">
@@ -18,10 +18,10 @@
 
     <!-- Chat Message -->
      <p>Chat Message From the system</p>
-     <article class="system message" id="chat-system-message-example">
+    <article class="system message" id="chat-system-message-example">
         <div class="content">
             <div class="body">
-                <p class="person">Doombeetle</p> <p class="verb">BOPPED</p> <p class="person">Someone</p> <p>for</p> <p class="important">23</p> <p class="verb">Damage</p>
+                <p class="person">Black Mage</p> <p class="verb">BOPPED</p> <p class="person">Fighter</p> <p>for</p> <p class="important">23</p> <p class="verb">Damage</p>
             </div>
             <div class="meta">
                 <label class="post date"> 10:00 am Feb 11, 2026</label>
@@ -31,19 +31,21 @@
 
     <!-- Chat Message with images -->
      <p>Chat Message with images</p>
-     <article class="message" id="chat-media-message-example">
+    <article class="message" id="chat-media-message-example">
         <div class="avatar">
             <img class="avatar image" src="Img/default-avatar.png" />
         </div>
         <div class="content">
             <div class="meta">
-                <label class="display name">Author</label>
+                <label class="display name">Black Mage</label>
                 <label class="post date"> 10:00 am Feb 11, 2026</label>
             </div>
             <div class="body">
                 <p>Check out these locations from the latest patch of Glink Quest 2!</p>
                 <img src="/Img/demo (1).png" />
                 <img src="/Img/demo (2).png" />
+                <img src="/Img/demo tall image.png" />
+                <img src="/Img/demo wide image.png" />
                 <p>Looks like we finally get to see the witches of West Marsh.</p>
                 <img src="/Img/demo (3).png" />
                 <p>Eventually, clicking on images will open a full-screen modal.</p>
@@ -108,11 +110,72 @@
         </li>
     </ul>
 
+    <!-- Text Input -->
+     <p>Input for chat</p>
+    <div class="input form">
+        <button class="media upload"><span uk-icon="plus"></span></button>
+        <textarea rows="1" placeholder="Start yapping..."></textarea>
+        <button class="send"><span uk-icon="mail"></span></button>
+    </div>
+
+    <p>Various friend indicator and online states</p>
     <!-- Item in Friend List, online -->
+    <div class="friend online">
+        <div class="avatar">
+            <img src="/Img/default-avatar.png">
+        </div>
+        <div class="about">
+            <div class="display name">
+                <label>Black Mage</label>
+            </div>
+            <div class="status">
+                <label>Online</label>
+            </div>
+        </div>
+    </div>
 
     <!-- Item in Friend List with unread message -->
+    <div class="friend online unread">
+        <div class="avatar">
+            <img src="/Img/default-avatar.png">
+        </div>
+        <div class="about">
+            <div class="display name">
+                <label>Black Mage</label>
+            </div>
+            <div class="status">
+                <label>Online</label>
+            </div>
+        </div>
+    </div>
 
     <!-- Item in Friend List, offline -->
+    <div class="friend offline">
+        <div class="avatar">
+            <img src="/Img/default-avatar.png">
+        </div>
+        <div class="about">
+            <div class="display name">
+                <label>Black Mage</label>
+            </div>
+            <div class="status">
+                <label>Offline</label>
+            </div>
+        </div>
+    </div>
 
     <!-- Item in Friend List, offline with unread message -->
+    <div class="friend offline unread">
+        <div class="avatar">
+            <img src="/Img/default-avatar.png">
+        </div>
+        <div class="about">
+            <div class="display name">
+                <label>Black Mage</label>
+            </div>
+            <div class="status">
+                <label>Offline</label>
+            </div>
+        </div>
+    </div>
 </div>

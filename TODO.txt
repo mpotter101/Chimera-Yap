@@ -1,5 +1,49 @@
 This chat room app is meant to replace a specific chat room with my friends.
 
+Priority features:
+    Sending images in group chat
+    end-to-end encryption
+    remembering login
+    posting messages to different topics in different groups
+    dm notifications
+    unread group chat notification
+        > also highlighting which channels in a group chat have unread messages
+    showing who is typing
+
+Secondary features:
+    Editing profile
+        - avatar
+        - display name
+        - password
+
+Features that can wait:
+    Editing a message you already posted
+    Dynamically sizing text area based on content
+    Message preview in Dms
+    Group chat roles
+    Creating group chats
+    Managing who is in what group chat
+    User resizable columns
+    Muting channels
+    Tab ping for browser when you have a dm
+
+Dev Log:
+
+Feb 11 2026
+    Refined the layout pretty significantly. Starting to feel like a real app.
+    Got a design hammered out for Chatty the Chimera.
+    Still have some elements to knock out.
+    Started listing out features that can wait as a way to get them off of the mental stack and keep the scope down.
+
+Work Items
+    [x] Figure out an easy way to implement a WYSIWYG editor
+        > cancelling this. Following a more discord-like way of adding media as it is easier.
+    [ ] Design the various friend states for friends that are online/offline and have an unread message
+    [ ] Design state for telegraphing the chatroom you are currently inspiration
+        > Both highlighting the selected chat room and a redudant set of info either in the header bar or somewhere similar.
+    [ ] Draw some simple profile icons for: Fighter, Healer, and Thief
+    [ ] make tiny icons for each of the heads on Chatty the Chimera to be used in a "so-and-so is yapping" animation for displaying to other users who is typing.
+
 Feb 10 2026
     Created a basic layout with fixed content to get an idea of flow and feel.
     I feel like the current design does a good job of working at a half-ratio for a 1080 desktop display.
@@ -8,7 +52,7 @@ Feb 10 2026
     Looking at PC-98 Rpgs for UI inspiration.
 
 Work Items
-    [ ] Figure out a more final design
-    [ ] Design Chatty the Chimera
-    [ ] Implement the more final design
-    [ ] Breakdown functional needs from there
+    [v] Figure out a more final design
+    [v] Design Chatty the Chimera
+    [v] Implement the more final design
+    [v] Breakdown functional needs from there

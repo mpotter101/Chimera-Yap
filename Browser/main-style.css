@@ -1,6 +1,7 @@
 .chimera.app {
     display: flex;
-    height: 87vh;
+    height: 89vh;
+    overflow: hidden;
 }
 
 .chatroom {
