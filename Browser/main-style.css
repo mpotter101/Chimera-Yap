@@ -20,4 +20,6 @@
 /* Variable inherited from chimera-style.css */
 .groups.and.friends {
     border-top: 1px solid var(--color-darkest);
+    height: 80vh;
+    overflow-y: scroll;
 }
