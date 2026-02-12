@@ -42,7 +42,8 @@ Work Items
     [ ] Design state for telegraphing the chatroom you are currently inspiration
         > Both highlighting the selected chat room and a redudant set of info either in the header bar or somewhere similar.
     [ ] Draw some simple profile icons for: Fighter, Healer, and Thief
-    [ ] make tiny icons for each of the heads on Chatty the Chimera to be used in a "so-and-so is yapping" animation for displaying to other users who is typing.
+    [ ] make tiny icons for each of the heads on Chatty the Chimera to be used in a "so-and-so is yapping" animation for displaying to other users who is typing. 
+    [ ] Fix styling issue with profile widget when window becomes too thin
 
 Feb 10 2026
     Created a basic layout with fixed content to get an idea of flow and feel.
